@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quintero Shoppin</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="@media_catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <!-- botones  -->
+        <div class="botones">
+            <button > Home</button>
+            <button > Products</button>
+            <button > About</button>
+            <button > Contact</button>
+        </div>
+        <!-- nombre Empresa centrado -->
+        <div class="nav-container">
+            <img class="img_nombre" src="https://3.bp.blogspot.com/-2YSAMKwLcNI/WrRajZWNRvI/AAAAAAAAAMc/ewXnKu1YIsUC5m87z3YdB7cZ3tNlYSSAwCLcBGAs/s1600/logo-mattelsa.png" alt="">
+        </div>
+    
+        <!-- logo-->
+        <div>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.ayNxbemcNzeHQpM4TvIMcwAAAA&pid=Api&P=0&h=180" class="logo">
+        </div>
+    </header>
+
+
+
+    <!-- contenido principal -->
+ <section>
+    <div class="contenido_principal">
+        <div class="contenedor_principal_1">
+            <div class="contenedor_seccion">
+                <div class="encabezado" onclick="toggleMenu('categoria', 'flecha-categoria')">
+                    <span class="h_unico" > Categoría</span>
+                    <span id="flecha-categoria">&#9660;</span> <!-- Flecha abajo -->
+                </div>
+                <ul id="categoria" class="contenido_ oculto">
+                    <li><input type="checkbox" onchange="filterProducts()"> Camisetas</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Shorts</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Tanks</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Pantalones</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Joggers</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Buzos</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Anillos</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Jeans</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Collares</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Llaveros</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Pines</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Gorras</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Polos</li>
+                        <li><input type="checkbox" onchange="filterProducts()"> Chaquetas</li>
+                    <!-- Más opciones -->
+                </ul>
+            </div>
+            
+            <div class="contenedor_seccion">
+                <div class="encabezado" onclick="toggleMenu('lista-colores', 'flecha-color')">
+                    <span  class="h_unico">Color</span>
+                    <span id="flecha-color">&#9660;</span> <!-- Flecha abajo -->
+                </div>
+                <div id="lista-colores" class="colores oculto">
+                    <div class="color" style="background-color: black;" onclick="filterByColor('black')"></div>
+                    <div class="color" style="background-color: white; border: 1px solid #ddd;" onclick="filterByColor('white')"></div>
+                    <div class="color" style="background-color: red;" onclick="filterByColor('red')"></div>
+                    <div class="color" style="background-color: blue;" onclick="filterByColor('blue')"></div>
+                    <div class="color" style="background-color: beige;" onclick="filterByColor('beige')"></div>
+                    <div class="color" style="background-color: pink;" onclick="filterByColor('pink')"></div>
+                    <div class="color" style="background-color: green;" onclick="filterByColor('green')"></div>
+                    <div class="color" style="background-color: gold;" onclick="filterByColor('gold')"></div>
+                    <div class="color" style="background-color: brown;" onclick="filterByColor('brown')"></div>
+                    <div class="color" style="background-color: orange;" onclick="filterByColor('orange')"></div>
+                    <div class="color" style="background-color: aqua;" onclick="filterByColor('aqua')"></div>
+                    <div class="color" style="background-color: gray;" onclick="filterByColor('gray')"></div>
+                    <div class="color" style="background-color: purple;" onclick="filterByColor('purple')"></div>
+                    <div class="color" style="background-color: tan;" onclick="filterByColor('tan')"></div>
+                    <div class="color" style="background-color: olive;" onclick="filterByColor('olive')"></div>
+                    <div class="color" style="background-color: salmon;" onclick="filterByColor('salmon')"></div>
+                    <div class="color" style="background-color: teal;" onclick="filterByColor('teal')"></div>
+                    <div class="color" style="background-color: lavender;" onclick="filterByColor('lavender')"></div>
+                    
+
+                    <!-- Más colores -->
+                </div>
+            </div>
+            
+            <div class="contenedor_seccion">
+                <div class="encabezado" onclick="toggleMenu('talla', 'flecha-talla')">
+                    <span  class="h_unico">Talla</span>
+                    <span id="flecha-talla">&#9660;</span> <!-- Flecha abajo -->
+                </div>
+                <ul id="talla" class="contenido_ oculto">
+                    <li><input type="checkbox" onchange="filterProducts()"> S</li>
+                    <li><input type="checkbox" onchange="filterProducts()"> M</li>
+                    <li><input type="checkbox" onchange="filterProducts()"> L</li>
+                    <li><input type="checkbox" onchange="filterProducts()"> XL</li>
+                    <!-- Más tallas -->
+                </ul>
+            </div>
+            
+            
+        </div>
+
+            
+            
+<!--  -->
+      
+        <div class="contenedor_principal_centrado">
+            <div class="contenedor_principal_2"  id="contenedor">
+                <div class="categoria_1" id="basicos">Basicos</div>
+                <div class="categoria_1" id="basicos">Basicos</div>
+                <div class="categoria_1" id="basicos">Basicos</div>
+                <div class="categoria_1">Basicos</div>
+                <div class="categoria_2">Cargo</div>
+                <div class="categoria_3">Denim</div>
+                <div class="categoria_4">Graficos</div>
+                <div class="categoria_5">Headwear</div>
+            </div>
+
+            <div class="contenedor_principal_3">
+                <div class="titulo_catalogo">
+                    <b>Ropa para hombre</b>
+            <br>
+            Ropa de hombre en nuestro sitio web y tiendas del país Quintero Fashion.
+
+                </div>           
+              </div>
+
+
+              <!--  -->
+              <div class="contenedor-principal">
+                <div class="producto" data-categoria="Camisetas" data-color="green" data-talla="S,M,L,XL">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/608883-500-auto?v=638636370039600000&width=500&height=auto&aspect=true" alt="Camisa blanca">
+                    <p>Excelente calidad.</p>
+                    <p class="precio">$79.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Camisetas" data-color="white" data-talla="M,S">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/590522-500-auto?v=638570073315330000&width=500&height=auto&aspect=true" alt="Camisa negra">
+                    <p>Calidad excepcional.</p>
+                    <p class="precio">$89.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Shorts" data-color="black" data-talla="S,M">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/600284-500-auto?v=638612178283570000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Durabilidad garantizada.</p>
+                    <p class="precio">$59.99</p>
+                    <button>Ver detalles</button>
+                </div>
+               <!--  -->
+                <div class="producto" data-categoria="Camisetas" data-color="black" data-talla="M,XL">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/595268-500-auto?v=638588002354870000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Materiales premium.</p>
+                    <p class="precio">$149.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Camisetas" data-color="olive" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/600965-500-auto?v=638618223555500000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Resistencia superior.</p>
+                    <p class="precio">$69.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Gorras" data-color="black" data-talla="M;S">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/607725-500-auto?v=638630414290600000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Fuerte y fiable material.</p>
+                    <p class="precio">$49.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <!--  -->
+                <div class="producto" data-categoria="Shorts" data-color="white" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/598732-500-auto?v=638606127732870000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Duradero y elegante.</p>
+                    <p class="precio">$79.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Joggers" data-color="black" data-talla="S,M">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/598860-500-auto?v=638606128814100000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Excelente rendimiento.</p>
+                    <p class="precio">$69.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Camiseta" data-color="black" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/599100-500-auto?v=638606130320800000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Calidad y resistencia.</p>
+                    <p class="precio">$59.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <!--  -->
+                <div class="producto" data-categoria="Camisetas" data-color="beige" data-talla="L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/606879-500-auto?v=638630412695200000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Construcción robusta.</p>
+                    <p class="precio">$99.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Camisetas" data-color="beige" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/603360-500-auto?v=638624319454600000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Calidad insuperable.</p>
+                    <p class="precio">$119.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Camisetas" data-color="white" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/603424-500-auto?v=638624319820730000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Construcción sólida.</p>
+                    <p class="precio">$139.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <!--  -->
+                <div class="producto" data-categoria="Camisetas" data-color="gray" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/592426-500-auto?v=638575897839930000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Resistencia garantizada.</p>
+                    <p class="precio">$79.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Camisetas" data-color="black" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/602387-500-auto?v=638624315145970000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Excelencia asegurada.</p>
+                    <p class="precio">$89.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Camisetas" data-color="black" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/597791-800-auto?v=638600082123030000&width=800&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Materiales de calidad.</p>
+                    <p class="precio">$79.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <!--  -->
+                <div class="producto" data-categoria="Camisetas" data-color="white" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/595867-500-auto?v=638588177514500000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Calidad que impresiona.</p>
+                    <p class="precio">$129.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Gorras" data-color="green" data-talla="M,S">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/607707-500-auto?v=638630414236330000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Diseño que perdura.</p>
+                    <p class="precio">$49.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Jeans" data-color="aqua" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/586328-500-auto?v=638551747221000000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Sostenible y resistente.</p>
+                    <p class="precio">$99.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <!--  -->
+                <div class="producto" data-categoria="Pantalones" data-color="gray" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/608375-500-auto?v=638636366200830000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Fiabilidad garantizada.</p>
+                    <p class="precio">$119.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Camisetas" data-color="black" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/604599-500-auto?v=638630409286030000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Construcción imbatible.</p>
+                    <p class="precio">$189.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Pantalones" data-color="" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/602315-500-auto?v=638624314610170000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Construcción imbatible.</p>
+                    <p class="precio">$299.99</p>
+                    <button>Ver detalles</button>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+        
+
+
+
+    </div>
+    <!--  -->
+   <footer>
+    <div class="footer-container">
+
+        <!-- Footer para escritorio -->
+        <div class="footer-section escritorio">
+            <h4>CONTACTO</h4>
+            <p><i class="fas fa-envelope"></i> marcelaquintero973@gmail.co</p>
+            <p><i class="fas fa-phone"></i> +57 3223517151</p>
+        </div>
+        <div class="footer-section escritorio">
+            <h4>QUIÉNES SOMOS</h4>
+            <p><a href="#">Cultura</a></p>
+            <p><a href="#">Trabaja aquí</a></p>
+            <p><a href="#">La vida en Quintero Fashion</a></p>
+        </div>
+        <div class="footer-section escritorio">
+            <h4>AYUDA</h4>
+            <p><a href="#">Envíos</a></p>
+            <p><a href="#">Seguimiento pedidos</a></p>
+            <p><a href="#">Preguntas frecuentes</a></p>
+        </div>
+        <div class="footer-section escritorio">
+            <h4>SÍGUENOS</h4>
+            <p>
+                <a href="#"><i class="fab fa-facebook icon"></i></a>
+                <a href="#"><i class="fab fa-instagram icon"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-tiktok icon"></i></a>
+                <a href="#"><i class="fab fa-whatsapp icon"></i></a>
+            </p>
+        </div>
+        <div class="footer-section escritorio">
+            <h4>Dirección</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Barrio Aeropuerto, Virgilio Barco AV 1B 29-30</p>
+        </div>
+
+        <!-- Footer para móviles -->
+        <div class="footer-section movil">
+            <div class="encabezado-menu" onclick="toggleMenu('contacto', 'flecha-contacto')">
+                <h4>CONTACTO</h4>
+                <span id="flecha-contacto">&#9660;</span> <!-- Flecha abajo -->
+            </div>
+            <ul id="contacto" class="contenido_filtro oculto">
+                <li><p><i class="fas fa-envelope"></i> marcelaquintero973@gmail.co</p></li>
+                <li><p><i class="fas fa-phone"></i> +57 3223517151</p></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section movil">
+            <div class="encabezado-menu" onclick="toggleMenu('quienes', 'flecha-quienes')">
+                <h4>QUIÉNES SOMOS</h4>
+                <span id="flecha-quienes">&#9660;</span> <!-- Flecha abajo -->
+            </div>
+            <ul id="quienes" class="contenido_filtro oculto">
+                <li><a href="#">Cultura</a></li>
+                <li><a href="#">Trabaja aquí</a></li>
+                <li><a href="#">La vida en Quintero Fashion</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section movil">
+            <div class="encabezado-menu" onclick="toggleMenu('ayuda', 'flecha-ayuda')">
+                <h4>AYUDA</h4>
+                <span id="flecha-ayuda">&#9660;</span> <!-- Flecha abajo -->
+            </div>
+            <ul id="ayuda" class="contenido_filtro oculto">
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Seguimiento pedidos</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section movil">
+            <h4>SÍGUENOS</h4>
+            <a href="#"><i class="fab fa-facebook icon"></i></a>
+            <a href="#"><i class="fab fa-instagram icon"></i></a>
+            <a href="#"><i class="fab fa-twitter icon"></i></a>
+            <a href="#"><i class="fab fa-tiktok icon"></i></a>
+            <a href="#"><i class="fab fa-whatsapp icon"></i></a><br><br>
+            <div class="terminos"> Terminos y condiciones
+                <br><br>
+                politica de privacidad 
+                <br><br>
+                Superintendencia
+            </div>
+            <br>
+            <div class="matelsa">© 2024 Mattelsa S.A.S.</div>
+        </div>
+        </div>
+        
+        
+</footer>
+
+
+
+
+
+
+<script>
+    
+    const container = document.getElementById('contenedor');
+        let isDown = false; 
+        let startX;
+        let scrollLeft; 
+
+        container.addEventListener('mousedown', (e) => {
+            isDown = true;
+            container.classList.add('active');
+            startX = e.pageX - container.offsetLeft; 
+            scrollLeft = container.scrollLeft; 
+            container.style.cursor = 'grabbing'; 
+        });
+
+ 
+        container.addEventListener('mouseleave', () => {
+            isDown = false;
+            container.style.cursor = 'grab';
+        });
+
+        container.addEventListener('mouseup', () => {
+            isDown = false;
+            container.style.cursor = 'grab';
+        });
+
+      
+        container.addEventListener('mousemove', (e) => {
+            if (!isDown) return; 
+            e.preventDefault();
+            const x = e.pageX - container.offsetLeft; 
+            const walk = (x - startX) * 3; 
+            container.scrollLeft = scrollLeft - walk; 
+        });
+
+    
+    
+    
+    
+    
+
+    function toggleMenu(id, flechaId) {
+        var contenido = document.getElementById(id);
+        var flecha = document.getElementById(flechaId);
+    
+        var menus = document.querySelectorAll('.contenido_filtro'); 
+        var flechas = document.querySelectorAll('.encabezado-menu span'); 
+    
+        
+        menus.forEach(function(menu) {
+            if (menu !== contenido && menu.classList.contains('visible')) {
+                menu.classList.remove('visible'); 
+                menu.classList.add('oculto');
+            }
+        });
+    
+      
+        flechas.forEach(function(flechaElemento) {
+            if (flechaElemento !== flecha) {
+                flechaElemento.innerHTML = '&#9660;'; 
+            }
+        });
+    
+    
+        if (contenido.classList.contains('visible')) {
+            contenido.classList.remove('visible');
+            contenido.classList.add('oculto');
+            flecha.innerHTML = '&#9660;'; 
+        } else {
+            contenido.classList.add('visible');
+            contenido.classList.remove('oculto');
+            flecha.innerHTML = '&#9650;'; 
+        }
+    }
+    
+   
+    document.querySelectorAll('.encabezado-menu').forEach(function (encabezado) {
+        encabezado.addEventListener('click', function () {
+          
+            const contenidoId = this.getAttribute('data-target');
+            const flechaId = this.querySelector('.flecha').id; 
+            toggleMenu(contenidoId, flechaId); 
+        });
+    });
+
+
+
+
+    
+        
+        function filterProducts() {
+         
+            const selectedCategories = Array.from(document.querySelectorAll('#categoria input:checked')).map(input => input.parentNode.textContent.trim());
+            
+          
+            const selectedSizes = Array.from(document.querySelectorAll('#talla input:checked')).map(input => input.parentNode.textContent.trim());
+            
+     
+            const selectedColor = window.selectedColor;
+        
+            const products = document.querySelectorAll('.producto');
+            products.forEach(product => {
+                const productCategory = product.getAttribute('data-categoria');
+                const productSizes = product.getAttribute('data-talla').split(','); 
+                const productColor = product.getAttribute('data-color');
+        
+                
+                const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(productCategory);
+                
+                const matchesSize = selectedSizes.length === 0 || selectedSizes.some(size => productSizes.includes(size));
+                
+         
+                const matchesColor = !selectedColor || productColor === selectedColor;
+        
+         
+                if (matchesCategory && matchesSize && matchesColor) {
+                    product.style.display = "block"; 
+                } else {
+                    product.style.display = "none"; 
+                }
+            });
+        }
+        
+        function filterByColor(color) {
+            window.selectedColor = color; 
+            filterProducts(); 
+        }
+        
+
+
+
+        
+       
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

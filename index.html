@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quintero Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="@media_index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Logo alineado a la izquierda -->
+         <div>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.ayNxbemcNzeHQpM4TvIMcwAAAA&pid=Api&P=0&h=180" class="logo">
+        </div> 
+
+        <!-- Menú centrado -->
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <!-- <li><a href="#"  onclick="location.href='catalogo.html'">catalogo</a></li>
+                    <li><a href="#" onclick="location.href='hombre/index.html'">Informes</a></li>
+                    <li><a href="#"  onclick="location.href='catalogo.html'">catalogo</a></li>
+                    <li><a href="#" onclick="location.href='hombre/index.html'">Informes</a></li>
+                     -->
+                    
+                  
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Iconos alineados a la derecha -->
+        <div class="icon-container">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </header>
+
+   <section>
+    <div class="buttons-container">
+        <button class="boton" onclick="location.href='catalogo.html'">catalogo</button>
+        <button class="boton" onclick="location.href='hombre/index.html'">Informes</button>
+    </div>
+   </section>
+
+
+   <!--  -->
+   <footer>
+    <div class="footer-container">
+
+        <!-- Footer para escritorio -->
+        <div class="footer-section escritorio">
+            <h4>CONTACTO</h4>
+            <p><i class="fas fa-envelope"></i> marcelaquintero973@gmail.co</p>
+            <p><i class="fas fa-phone"></i> +57 3223517151</p>
+        </div>
+        <div class="footer-section escritorio">
+            <h4>QUIÉNES SOMOS</h4>
+            <p><a href="#">Cultura</a></p>
+            <p><a href="#">Trabaja aquí</a></p>
+            <p><a href="#">La vida en Quintero Fashion</a></p>
+        </div>
+        <div class="footer-section escritorio">
+            <h4>AYUDA</h4>
+            <p><a href="#">Envíos</a></p>
+            <p><a href="#">Seguimiento pedidos</a></p>
+            <p><a href="#">Preguntas frecuentes</a></p>
+        </div>
+        <div class="footer-section escritorio">
+            <h4>SÍGUENOS</h4>
+            <p>
+                <a href="#"><i class="fab fa-facebook icon"></i></a>
+                <a href="#"><i class="fab fa-instagram icon"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-tiktok icon"></i></a>
+                <a href="#"><i class="fab fa-whatsapp icon"></i></a>
+            </p>
+        </div>
+        <div class="footer-section escritorio">
+            <h4>Dirección</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Barrio Aeropuerto, Virgilio Barco AV 1B 29-30</p>
+        </div>
+
+        <!-- Footer para móviles -->
+        <div class="footer-section movil">
+            <div class="encabezado-menu" onclick="toggleMenu('contacto', 'flecha-contacto')">
+                <h4>CONTACTO</h4>
+                <span id="flecha-contacto">&#9660;</span> <!-- Flecha abajo -->
+            </div>
+            <ul id="contacto" class="contenido_filtro oculto">
+                <li><p><i class="fas fa-envelope"></i> marcelaquintero973@gmail.co</p></li>
+                <li><p><i class="fas fa-phone"></i> +57 3223517151</p></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section movil">
+            <div class="encabezado-menu" onclick="toggleMenu('quienes', 'flecha-quienes')">
+                <h4>QUIÉNES SOMOS</h4>
+                <span id="flecha-quienes">&#9660;</span> <!-- Flecha abajo -->
+            </div>
+            <ul id="quienes" class="contenido_filtro oculto">
+                <li><a href="#">Cultura</a></li>
+                <li><a href="#">Trabaja aquí</a></li>
+                <li><a href="#">La vida en Quintero Fashion</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section movil">
+            <div class="encabezado-menu" onclick="toggleMenu('ayuda', 'flecha-ayuda')">
+                <h4>AYUDA</h4>
+                <span id="flecha-ayuda">&#9660;</span> <!-- Flecha abajo -->
+            </div>
+            <ul id="ayuda" class="contenido_filtro oculto">
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Seguimiento pedidos</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section movil">
+            <h4>SÍGUENOS</h4>
+            <a href="#"><i class="fab fa-facebook icon"></i></a>
+            <a href="#"><i class="fab fa-instagram icon"></i></a>
+            <a href="#"><i class="fab fa-twitter icon"></i></a>
+            <a href="#"><i class="fab fa-tiktok icon"></i></a>
+            <a href="#"><i class="fab fa-whatsapp icon"></i></a><br><br>
+            <div class="terminos"> Terminos y condiciones
+                <br><br>
+                politica de privacidad 
+                <br><br>
+                Superintendencia
+            </div>
+            <br>
+            <div class="matelsa">© 2024 Mattelsa S.A.S.</div>
+        </div>
+        </div>
+        
+        
+</footer>
+
+
+
+
+
+<script>
+
+
+function toggleMenu(id, flechaId) {
+    var contenido = document.getElementById(id);
+    var flecha = document.getElementById(flechaId);
+
+    var menus = document.querySelectorAll('.contenido_filtro'); 
+    var flechas = document.querySelectorAll('.encabezado-menu span'); 
+
+
+    menus.forEach(function(menu) {
+        if (menu !== contenido && menu.classList.contains('visible')) {
+            menu.classList.remove('visible'); 
+        }
+    });
+
+   
+    flechas.forEach(function(flechaElemento) {
+        if (flechaElemento !== flecha) {
+            flechaElemento.innerHTML = '&#9660;'; 
+        }
+    });
+
+    
+    if (contenido.classList.contains('visible')) {
+        contenido.classList.remove('visible');
+        flecha.innerHTML = '&#9660;'; 
+    } else {
+        contenido.classList.add('visible');
+        flecha.innerHTML = '&#9650;'; 
+    }
+}
+
+
+document.querySelectorAll('.encabezado-menu').forEach(function (encabezado) {
+    encabezado.addEventListener('click', function () {
+      
+        const contenidoId = this.getAttribute('data-target');
+        const flechaId = this.querySelector('.flecha').id; 
+        toggleMenu(contenidoId, flechaId); 
+    });
+});
+
+    
+</script>
+</body>
+</html>
+
