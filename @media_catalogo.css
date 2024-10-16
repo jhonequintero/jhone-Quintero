@@ -14,7 +14,7 @@
     .botones button {
         background-color: transparent;
         border-radius: 10px;
-        margin-top: 20%;
+        margin-top: 35%;
         color: black;
         border: none;
         padding: 2% 4%;
@@ -27,12 +27,14 @@
     }
 
     .img_nombre {
-        margin-right: 3em;
+        margin-right: 4em;
+        margin-bottom: 3.0em;
         width: 5.5em;
         height: 4.5em;
     }
  
     .logo {
+        margin-top: 3.0em;
         width: 3em;
         height: auto;
         border-radius: 50%;
@@ -44,47 +46,111 @@
         border-radius: 50%;
     }
  
-    .h_unico {
-        font-size: 13.8px;
-        margin-right: 9px;
-    }
+  
+#no-ver{
+    display: block;
+}
 
-    .colores {
-        display: grid;
-        grid-template-columns: repeat(4, 30px);
-        gap: 0.0em; 
-        margin-top: 1em;
-    }
 
-    .color {
-        width: 1.7em;
-        height: 1.7em;
-        border-radius: 4px;
-        cursor: pointer;
-        margin-bottom: 0.5em;
-    }
 
-    .contenido_ {
-        list-style-type: none;
-        padding-left: 0;
-        margin-top: 1em;
-    }
 
-    .contenido_ li {
-        margin-bottom: 2%;
-        font-size: 12px;
-    }
+/* Estilos para el menú de movil */
+.menu_escritorio_principal {
+    background-color: #fff;
+    border: 1px solid #ddd;
+   width: auto;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start; 
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    /* padding: 12px; */
+}
 
-    .contenedor_principal_centrado {
-        background-color: white;
-        width: 65%;
-        height: auto;
-        border: 1px solid #ddd;
-    }
+/* Estilo para cada sección del menú */
+.contenedor_seccion_2 {
 
-    #basicos {
-        display: block; 
-    }
+    flex-direction: column; 
+    padding: 1em;
+    width: auto; 
+    margin-right: 1px; 
+}
+
+.h_alt{
+    color: rgb(50, 49, 49);
+    padding-right: 15px;
+    font-size: 12px;
+}
+
+#flecha-categoria-alt,#flecha-color-alt,#flecha-talla-alt{
+    font-size: 9px;
+    color:green;
+    /* padding-right: 10px; */
+}
+
+
+
+/* Encabezado de la sección */
+.encabezado {
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* Listas de categorías */
+.contenido {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.contenido li {
+    margin-bottom: 5px;
+    text-align: left; 
+}
+
+
+input[type="checkbox"] {
+    margin-right: 1px;
+}
+
+.oculto {
+    display: none;
+}
+
+
+.colores {
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    gap: 0.5em;
+    margin-top: 10px;
+}
+
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 
     .contenedor_principal_2 {
         width: 100%;
@@ -106,7 +172,7 @@
     }
 
     .contenedor_principal_2 div {
-        min-width: 10em;
+        min-width: 12em;
         background-color: white;
         display: flex;
         justify-content: center;
@@ -124,17 +190,34 @@
 
     .titulo_catalogo {
         background-color: #fff;
+        background-color: #ddd;
         height: 5em;
         font-size: 11px;
+        padding: 10px;
+        
+        width: auto;
+       
+        
     }
 
+    .contenedor_principal_3 {
+        display:grid ;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: auto;
+    }
+    
+    
     .contenedor-principal {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
         padding: 2%;
         background-color: #fff;
-    }
+    } 
 
     .producto p {
         font-size: 11px;
@@ -143,7 +226,7 @@
 
     img:hover {
         transition: transform 0.5s ease;
-        transform: scale(1.2);
+        transform: scale(1.);
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
@@ -176,10 +259,10 @@
         width: 100%;
         gap: 10px; 
     }
-
+/* 
     .contenedor_seccion {
         margin-bottom: 3%;
-    }
+    } */
 
     .encabezado-menu {
         font-size: 15px;
@@ -313,14 +396,46 @@
     .footer-section.escritorio {
         display: none; 
     }
+
     
     .footer-section.movil {
         display: block; 
     }
+
+    .contenedor_seccion{
+        display: none;
+    }
+
+    .contenedor_principal_1{
+        display: none;
+    }
+    #menu_escritorio{
+        display: none;
+    }
+
+    .contenedor_seccion_2{
+        display: block;
+    }
+    #menu_escritorio_2{
+        display: block;
+    }
+
+
+    
+   
 }
 
 @media (min-width: 769px) {
     .footer-section.movil {
         display: none; 
     }
+
+    .contenedor_seccion_2{
+        display: none;
+    }
+    .menu_escritorio_2{
+        display: none;
+    }
+    
+
 }

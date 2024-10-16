@@ -84,6 +84,8 @@ header:hover {
     border: 1px solid #ddd;
 }
 
+
+
 .contenedor_seccion {
     margin-bottom: 7%;
 }
@@ -145,6 +147,9 @@ input[type="checkbox"] {
 #basicos {
     display: none;
 }
+#no-ver{
+    display: none;
+} 
 
 .contenedor_principal_2 {
     background-color: white;
@@ -279,7 +284,12 @@ input[type="checkbox"] {
 
 .titulo_catalogo {
     background-color: #fff;
+    background-color: #ddd;
     height: 5em;
+    width: 95%;
+    padding: 10px;
+    
+  
 }
 
 .contenedor-principal {

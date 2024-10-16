@@ -35,7 +35,8 @@
  <section>
     <div class="contenido_principal">
         <div class="contenedor_principal_1">
-            <div class="contenedor_seccion">
+            <!-- menu para escritorio -->
+            <div class="contenedor_seccion" id="menu_escritorio">
                 <div class="encabezado" onclick="toggleMenu('categoria', 'flecha-categoria')">
                     <span class="h_unico" > Categoría</span>
                     <span id="flecha-categoria">&#9660;</span> <!-- Flecha abajo -->
@@ -59,10 +60,10 @@
                 </ul>
             </div>
             
-            <div class="contenedor_seccion">
+            <div class="contenedor_seccion" id="menu_escritorio">
                 <div class="encabezado" onclick="toggleMenu('lista-colores', 'flecha-color')">
                     <span  class="h_unico">Color</span>
-                    <span id="flecha-color">&#9660;</span> <!-- Flecha abajo -->
+                    <span class="flecha-categoria" id="flecha-color">&#9660;</span> <!-- Flecha abajo -->
                 </div>
                 <div id="lista-colores" class="colores oculto">
                     <div class="color" style="background-color: black;" onclick="filterByColor('black')"></div>
@@ -83,16 +84,17 @@
                     <div class="color" style="background-color: salmon;" onclick="filterByColor('salmon')"></div>
                     <div class="color" style="background-color: teal;" onclick="filterByColor('teal')"></div>
                     <div class="color" style="background-color: lavender;" onclick="filterByColor('lavender')"></div>
-                    
-
                     <!-- Más colores -->
                 </div>
+
+
+
             </div>
             
-            <div class="contenedor_seccion">
+            <div class="contenedor_seccion" id="menu_escritorio">
                 <div class="encabezado" onclick="toggleMenu('talla', 'flecha-talla')">
                     <span  class="h_unico">Talla</span>
-                    <span id="flecha-talla">&#9660;</span> <!-- Flecha abajo -->
+                    <span class="flecha-categoria" id="flecha-talla">&#9660;</span> <!-- Flecha abajo -->
                 </div>
                 <ul id="talla" class="contenido_ oculto">
                     <li><input type="checkbox" onchange="filterProducts()"> S</li>
@@ -112,9 +114,9 @@
       
         <div class="contenedor_principal_centrado">
             <div class="contenedor_principal_2"  id="contenedor">
-                <div class="categoria_1" id="basicos">Basicos</div>
-                <div class="categoria_1" id="basicos">Basicos</div>
-                <div class="categoria_1" id="basicos">Basicos</div>
+                <div class="categoria_1" id="no-ver" id="basicos">Basicos</div>
+                <div class="categoria_1" id="no-ver">Basicos</div>
+                <div class="categoria_1" id="no-ver">Basicos</div>
                 <div class="categoria_1">Basicos</div>
                 <div class="categoria_2">Cargo</div>
                 <div class="categoria_3">Denim</div>
@@ -124,11 +126,89 @@
 
             <div class="contenedor_principal_3">
                 <div class="titulo_catalogo">
-                    <b>Ropa para hombre</b>
-            <br>
+                   <p> <b>Ropa para hombre</b></p>
+         
             Ropa de hombre en nuestro sitio web y tiendas del país Quintero Fashion.
 
-                </div>           
+                </div> 
+
+               <!-- Menú Móvil -->
+            <!-- Menú Móvil Alternativo -->
+            <div class="menu_escritorio_principal">
+                <!-- Sección Categoría -->
+                <div class="contenedor_seccion_2">
+                    <div class="encabezado" onclick="toggleMenu('categoria_alt', 'flecha-categoria-alt')">
+                        <span class="h_alt">Categoría</span>
+                        <span id="flecha-categoria-alt">&#9660;</span>
+                    </div>
+                    <ul id="categoria_alt" class="contenido oculto">
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Camisetas</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Shorts</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Tanks</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Pantalones</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Joggers</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Buzos</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Anillos</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Jeans</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Collares</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Llaveros</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Pines</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Gorras</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Polos</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> Chaquetas</li>
+                   
+                        <!-- Más opciones -->
+                    </ul>
+                </div>
+            
+                <!-- Sección Colores -->
+                <div class="contenedor_seccion_2">
+                    <div class="encabezado" onclick="toggleMenu('lista-colores-alt', 'flecha-color-alt')">
+                        <span class="h_alt">Color</span>
+                        <span id="flecha-color-alt">&#9660;</span>
+                    </div>
+                    <div id="lista-colores-alt" class="colores oculto">
+                        <div class="color" style="background-color: black;" onclick="filterByColor('black')"></div>
+                        <div class="color" style="background-color: white; border: 1px solid #ddd;" onclick="filterByColor('white')"></div>
+                        <div class="color" style="background-color: red;" onclick="filterByColor('red')"></div>
+                        <div class="color" style="background-color: blue;" onclick="filterByColor('blue')"></div>
+                        <div class="color" style="background-color: beige;" onclick="filterByColor('beige')"></div>
+                        <div class="color" style="background-color: pink;" onclick="filterByColor('pink')"></div>
+                        <div class="color" style="background-color: green;" onclick="filterByColor('green')"></div>
+                        <div class="color" style="background-color: gold;" onclick="filterByColor('gold')"></div>
+                        <div class="color" style="background-color: brown;" onclick="filterByColor('brown')"></div>
+                        <div class="color" style="background-color: orange;" onclick="filterByColor('orange')"></div>
+                        <div class="color" style="background-color: aqua;" onclick="filterByColor('aqua')"></div>
+                        <div class="color" style="background-color: gray;" onclick="filterByColor('gray')"></div>
+                        <div class="color" style="background-color: purple;" onclick="filterByColor('purple')"></div>
+                        <div class="color" style="background-color: tan;" onclick="filterByColor('tan')"></div>
+                        <div class="color" style="background-color: olive;" onclick="filterByColor('olive')"></div>
+                        <div class="color" style="background-color: salmon;" onclick="filterByColor('salmon')"></div>
+                        <div class="color" style="background-color: teal;" onclick="filterByColor('teal')"></div>
+                        <div class="color" style="background-color: lavender;" onclick="filterByColor('lavender')"></div>
+                        <!-- Más colores -->
+                    </div>
+                </div>
+            
+                <!-- Sección Tallas -->
+                <div class="contenedor_seccion_2">
+                    <div class="encabezado" onclick="toggleMenu('talla_alt', 'flecha-talla-alt')">
+                        <span class="h_alt">Talla</span>
+                        <span id="flecha-talla-alt">&#9660;</span>
+                    </div>
+                    <ul id="talla_alt" class="contenido oculto">
+                        <li><input type="checkbox" onchange="filterProductsDos()"> S</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> M</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> L</li>
+                        <li><input type="checkbox" onchange="filterProductsDos()"> XL</li>
+                        <!-- Más tallas -->
+                    </ul>
+                </div>
+            </div>
+            
+                
+                
+                
               </div>
 
 
@@ -260,10 +340,29 @@
                     <p class="precio">$189.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Pantalones" data-color="" data-talla="M,S,L">
+                <div class="producto" data-categoria="Pantalones" data-color="beige" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/602315-500-auto?v=638624314610170000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Construcción imbatible.</p>
                     <p class="precio">$299.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <!--  -->
+                <div class="producto" data-categoria="Camisetas" data-color="white" data-talla="L,M,S,XL">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/610774-500-auto?v=638642851923630000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Construcción robusta.</p>
+                    <p class="precio">$99.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Camisetas" data-color="red" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/600993-500-auto?v=638618223656630000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Calidad insuperable.</p>
+                    <p class="precio">$119.99</p>
+                    <button>Ver detalles</button>
+                </div>
+                <div class="producto" data-categoria="Camisetas" data-color="red" data-talla="M,S,L">
+                    <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/610335-500-auto?v=638642382870570000&width=500&height=auto&aspect=true" alt="Camisa roja">
+                    <p>Construcción sólida.</p>
+                    <p class="precio">$139.99</p>
                     <button>Ver detalles</button>
                 </div>
 
@@ -465,53 +564,93 @@
     });
 
 
-
+//menu para escritorio
 
     
-        
-        function filterProducts() {
-         
-            const selectedCategories = Array.from(document.querySelectorAll('#categoria input:checked')).map(input => input.parentNode.textContent.trim());
-            
-          
-            const selectedSizes = Array.from(document.querySelectorAll('#talla input:checked')).map(input => input.parentNode.textContent.trim());
-            
-     
-            const selectedColor = window.selectedColor;
-        
-            const products = document.querySelectorAll('.producto');
-            products.forEach(product => {
-                const productCategory = product.getAttribute('data-categoria');
-                const productSizes = product.getAttribute('data-talla').split(','); 
-                const productColor = product.getAttribute('data-color');
-        
-                
-                const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(productCategory);
-                
-                const matchesSize = selectedSizes.length === 0 || selectedSizes.some(size => productSizes.includes(size));
-                
-         
-                const matchesColor = !selectedColor || productColor === selectedColor;
-        
-         
-                if (matchesCategory && matchesSize && matchesColor) {
-                    product.style.display = "block"; 
-                } else {
-                    product.style.display = "none"; 
-                }
-            });
+       // Función para filtrar productos según las selecciones de categoría, talla y color
+function filterProducts() {
+    // Obtener las categorías seleccionadas
+    const selectedCategories = Array.from(document.querySelectorAll('#categoria input:checked')).map(input => input.parentNode.textContent.trim());
+    
+    // Obtener las tallas seleccionadas
+    const selectedSizes = Array.from(document.querySelectorAll('#talla input:checked')).map(input => input.parentNode.textContent.trim());
+    
+    // Obtener el color seleccionado
+    const selectedColor = window.selectedColor; // Utiliza la variable global
+
+    // Seleccionar todos los productos
+    const products = document.querySelectorAll('.producto');
+    products.forEach(product => {
+        const productCategory = product.getAttribute('data-categoria');
+        const productSizes = product.getAttribute('data-talla').split(','); 
+        const productColor = product.getAttribute('data-color');
+
+        // Verificar si el producto coincide con las categorías, tallas y color seleccionados
+        const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(productCategory);
+        const matchesSize = selectedSizes.length === 0 || selectedSizes.some(size => productSizes.includes(size));
+        const matchesColor = !selectedColor || productColor === selectedColor;
+
+        // Mostrar o ocultar el producto según los filtros aplicados
+        if (matchesCategory && matchesSize && matchesColor) {
+            product.style.display = "block"; 
+        } else {
+            product.style.display = "none"; 
         }
-        
-        function filterByColor(color) {
-            window.selectedColor = color; 
-            filterProducts(); 
+    });
+}
+
+// Función para filtrar por color
+function filterByColor(color) {
+    window.selectedColor = color; // Establecer el color seleccionado
+    filterProducts(); // Llamar a la función de filtrado
+}
+
+// Inicializar color seleccionado como nulo
+let selectedColor = null;
+
+
+
+
+
+// Inicializar color seleccionado para el segundo menú
+let selectedColorDos = null;
+
+function filterProductsDos() {
+    // Obtener las categorías seleccionadas
+    const selectedCategories = Array.from(document.querySelectorAll('#categoria_alt input:checked')).map(input => input.parentNode.textContent.trim());
+    // Obtener las tallas seleccionadas
+    const selectedSizes = Array.from(document.querySelectorAll('#talla_alt input:checked')).map(input => input.parentNode.textContent.trim());
+    // Obtener el color seleccionado
+    const selectedColor = window.selectedColorDos;
+
+    const products = document.querySelectorAll('.producto'); // Asegúrate de que los productos tengan la clase 'producto'
+    products.forEach(product => {
+        const productCategory = product.getAttribute('data-categoria');
+        const productSizes = product.getAttribute('data-talla').split(',');
+        const productColor = product.getAttribute('data-color');
+
+        // Comprobar si el producto coincide con las selecciones
+        const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(productCategory);
+        const matchesSize = selectedSizes.length === 0 || selectedSizes.some(size => productSizes.includes(size));
+        const matchesColor = !selectedColor || productColor === selectedColor;
+
+        // Mostrar u ocultar el producto según el resultado
+        if (matchesCategory && matchesSize && matchesColor) {
+            product.style.display = "block"; // Muestra el producto
+        } else {
+            product.style.display = "none"; // Oculta el producto
         }
-        
+    });
+}
+
+function filterByColorDos(color) {
+    window.selectedColorDos = color; // Establecer el color seleccionado
+    filterProductsDos(); // Filtrar los productos
+}
 
 
 
-        
-       
+
 </script>
 
 
