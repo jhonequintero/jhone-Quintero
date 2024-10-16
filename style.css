@@ -106,7 +106,7 @@ nav ul li a:hover {
 }
 
 .boton {
-    background-color: transparent;
+    background-color: #fff;
     border: 2px solid white;
     border-radius: 0px;
     color: rgb(0, 0, 0);
@@ -120,7 +120,7 @@ nav ul li a:hover {
 }
 
 .boton:hover {
-    border: 2px solid #fff;
+    border: 2px solid #c7c0c0;
     background-color: white;
     color: black;
 }
