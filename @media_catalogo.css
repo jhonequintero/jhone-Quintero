@@ -85,6 +85,7 @@
     font-size: 12px;
 }
 
+
 #flecha-categoria-alt,#flecha-color-alt,#flecha-talla-alt{
     font-size: 9px;
     color:green;
@@ -114,6 +115,7 @@
 .contenido li {
     margin-bottom: 5px;
     text-align: left; 
+    font-size: 11px;
 }
 
 
