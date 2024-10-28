@@ -13,10 +13,50 @@
     <header>
         <!-- botones  -->
         <div class="botones">
-            <button > Home</button>
-            <button > Products</button>
-            <button > About</button>
-            <button > Contact</button>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Homes</a>
+                        <ul class="opciones_1">
+                            <li><a href="#">Cucuta</a></li>
+                            <li><a href="#">Brazil</a></li>
+                            <li><a href="#">Francia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Products</a>
+                        <ul class="opciones_1">
+                            <li><a href="#">portatil</a></li>
+                            <li><a href="#">silla gamer</a></li>
+                            <li><a href="#">mause</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">About</a>
+                        <ul class="opciones_1">
+                            <li><a href="#">programacion</a></li>
+                            <li><a href="#">ingenieria de sistemas</a></li>
+                            <li><a href="#">sistema informatico</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Contact</a>
+                        <ul class="opciones_1">
+                            <li><a href="#">+57- 3223517151</a></li>
+                            <li><a href="#">+32 -3202321456</a></li>
+                            <li><a href="#">+45-3212344567</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <!-- nombre Empresa centrado -->
         <div class="nav-container">
@@ -116,12 +156,12 @@
             <div class="contenedor_principal_2"  id="contenedor">
                 <div class="categoria_1" id="no-ver" id="basicos">Basicos</div>
                 <div class="categoria_1" id="no-ver">Basicos</div>
-                <div class="categoria_1" id="no-ver">Basicos</div>
-                <div class="categoria_1">Basicos</div>
-                <div class="categoria_2">Cargo</div>
-                <div class="categoria_3">Denim</div>
-                <div class="categoria_4">Graficos</div>
-                <div class="categoria_5">Headwear</div>
+                <div class="categoria_1" id="no-ver" >Basicos</div>
+                <div class="categoria_1" data-categoria="basicos">Basicos</div>
+                <div class="categoria_2" data-categoria="cargo">Cargo</div>
+                <div class="categoria_3" data-categoria="denim">Denim</div>
+                <div class="categoria_4" data-categoria="graficos">Graficos</div>
+                <div class="categoria_5" data-categoria="headwear">Headwear</div>
             </div>
 
             <div class="contenedor_principal_3">
@@ -214,152 +254,152 @@
 
               <!--  -->
               <div class="contenedor-principal">
-                <div class="producto" data-categoria="Camisetas" data-color="green" data-talla="S,M,L,XL">
+                <div class="producto" data-categoria="Camisetas,basicos" data-color="green" data-talla="S,M,L,XL">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/608883-500-auto?v=638636370039600000&width=500&height=auto&aspect=true" alt="Camisa blanca">
                     <p>Excelente calidad.</p>
                     <p class="precio">$79.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Camisetas" data-color="white" data-talla="M,S">
+                <div class="producto" data-categoria="Camisetas,graficos" data-color="white" data-talla="M,S">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/590522-500-auto?v=638570073315330000&width=500&height=auto&aspect=true" alt="Camisa negra">
                     <p>Calidad excepcional.</p>
                     <p class="precio">$89.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Shorts" data-color="black" data-talla="S,M">
+                <div class="producto" data-categoria="Shorts,basicos" data-color="black" data-talla="S,M">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/600284-500-auto?v=638612178283570000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Durabilidad garantizada.</p>
                     <p class="precio">$59.99</p>
                     <button>Ver detalles</button>
                 </div>
                <!--  -->
-                <div class="producto" data-categoria="Camisetas" data-color="black" data-talla="M,XL">
+                <div class="producto" data-categoria="Camisetas,cargo" data-color="black" data-talla="M,XL">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/595268-500-auto?v=638588002354870000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Materiales premium.</p>
                     <p class="precio">$149.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Camisetas" data-color="olive" data-talla="M,S,L">
+                <div class="producto" data-categoria="Camisetas,basicos" data-color="olive" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/600965-500-auto?v=638618223555500000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Resistencia superior.</p>
                     <p class="precio">$69.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Gorras" data-color="black" data-talla="M;S">
+                <div class="producto" data-categoria="Gorras,headwear" data-color="black" data-talla="M;S">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/607725-500-auto?v=638630414290600000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Fuerte y fiable material.</p>
                     <p class="precio">$49.99</p>
                     <button>Ver detalles</button>
                 </div>
                 <!--  -->
-                <div class="producto" data-categoria="Shorts" data-color="white" data-talla="M,S,L">
+                <div class="producto" data-categoria="Shorts,basicos" data-color="white" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/598732-500-auto?v=638606127732870000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Duradero y elegante.</p>
                     <p class="precio">$79.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Joggers" data-color="black" data-talla="S,M">
+                <div class="producto" data-categoria="Joggers,denim" data-color="black" data-talla="S,M">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/598860-500-auto?v=638606128814100000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Excelente rendimiento.</p>
                     <p class="precio">$69.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Camiseta" data-color="black" data-talla="M,S,L">
+                <div class="producto" data-categoria="Camiseta,cargo" data-color="black" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/599100-500-auto?v=638606130320800000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Calidad y resistencia.</p>
                     <p class="precio">$59.99</p>
                     <button>Ver detalles</button>
                 </div>
                 <!--  -->
-                <div class="producto" data-categoria="Camisetas" data-color="beige" data-talla="L">
+                <div class="producto" data-categoria="Camisetas,graficos" data-color="beige" data-talla="L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/606879-500-auto?v=638630412695200000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Construcción robusta.</p>
                     <p class="precio">$99.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Camisetas" data-color="beige" data-talla="M,S,L">
+                <div class="producto" data-categoria="Camisetas,basicos" data-color="beige" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/603360-500-auto?v=638624319454600000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Calidad insuperable.</p>
                     <p class="precio">$119.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Camisetas" data-color="white" data-talla="M,S,L">
+                <div class="producto" data-categoria="Camisetas,basicos" data-color="white" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/603424-500-auto?v=638624319820730000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Construcción sólida.</p>
                     <p class="precio">$139.99</p>
                     <button>Ver detalles</button>
                 </div>
                 <!--  -->
-                <div class="producto" data-categoria="Camisetas" data-color="gray" data-talla="M,S,L">
+                <div class="producto" data-categoria="Camisetas,graficos" data-color="gray" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/592426-500-auto?v=638575897839930000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Resistencia garantizada.</p>
                     <p class="precio">$79.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Camisetas" data-color="black" data-talla="M,S,L">
+                <div class="producto" data-categoria="Camisetas,basicos" data-color="black" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/602387-500-auto?v=638624315145970000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Excelencia asegurada.</p>
                     <p class="precio">$89.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Camisetas" data-color="black" data-talla="M,S,L">
+                <div class="producto" data-categoria="Camisetas.graficos" data-color="black" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/597791-800-auto?v=638600082123030000&width=800&height=auto&aspect=true" alt="Camisa roja">
                     <p>Materiales de calidad.</p>
                     <p class="precio">$79.99</p>
                     <button>Ver detalles</button>
                 </div>
                 <!--  -->
-                <div class="producto" data-categoria="Camisetas" data-color="white" data-talla="M,S,L">
+                <div class="producto" data-categoria="Camisetas,basicos" data-color="white" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/595867-500-auto?v=638588177514500000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Calidad que impresiona.</p>
                     <p class="precio">$129.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Gorras" data-color="green" data-talla="M,S">
+                <div class="producto" data-categoria="Gorras,headwear" data-color="green" data-talla="M,S">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/607707-500-auto?v=638630414236330000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Diseño que perdura.</p>
                     <p class="precio">$49.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Jeans" data-color="aqua" data-talla="M,S,L">
+                <div class="producto" data-categoria="Jeans.denim" data-color="aqua" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/586328-500-auto?v=638551747221000000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Sostenible y resistente.</p>
                     <p class="precio">$99.99</p>
                     <button>Ver detalles</button>
                 </div>
                 <!--  -->
-                <div class="producto" data-categoria="Pantalones" data-color="gray" data-talla="M,S,L">
+                <div class="producto" data-categoria="Pantalones,cargo" data-color="gray" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/608375-500-auto?v=638636366200830000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Fiabilidad garantizada.</p>
                     <p class="precio">$119.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Camisetas" data-color="black" data-talla="M,S,L">
+                <div class="producto" data-categoria="Camisetas,basicos" data-color="black" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/604599-500-auto?v=638630409286030000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Construcción imbatible.</p>
                     <p class="precio">$189.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Pantalones" data-color="beige" data-talla="M,S,L">
+                <div class="producto" data-categoria="Pantalones,cargo" data-color="beige" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/602315-500-auto?v=638624314610170000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Construcción imbatible.</p>
                     <p class="precio">$299.99</p>
                     <button>Ver detalles</button>
                 </div>
                 <!--  -->
-                <div class="producto" data-categoria="Camisetas" data-color="aqua" data-talla="L,M,S,XL">
+                <div class="producto" data-categoria="Camisetas,basicos" data-color="aqua" data-talla="L,M,S,XL">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/610774-500-auto?v=638642851923630000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Construcción robusta.</p>
                     <p class="precio">$99.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Camisetas" data-color="red" data-talla="M,S,L">
+                <div class="producto" data-categoria="Camisetas,basicos" data-color="red" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/600993-500-auto?v=638618223656630000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Calidad insuperable.</p>
                     <p class="precio">$119.99</p>
                     <button>Ver detalles</button>
                 </div>
-                <div class="producto" data-categoria="Camisetas" data-color="red" data-talla="M,S,L">
+                <div class="producto" data-categoria="Camisetas,graficos" data-color="red" data-talla="M,S,L">
                     <img src="https://b2cmattelsa.vtexassets.com/arquivos/ids/610335-500-auto?v=638642382870570000&width=500&height=auto&aspect=true" alt="Camisa roja">
                     <p>Construcción sólida.</p>
                     <p class="precio">$139.99</p>
@@ -650,7 +690,7 @@ function filterByColorDos(color) {
 
 
 
-
+//
 
 </script>
 
