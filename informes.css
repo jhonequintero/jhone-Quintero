@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+.cuadro_principal{
+    width: 100%;
+    height: auto;
+    background: transparent;
+    border: 2px solid black;
+}
+
+.cuadro_encabezado{
+    width: 100%;
+    height: 150px;
+    background: black;
+    border: 2px solid black;
+}
+
+.div_botones{
+    display: flex;
+    gap: 1%;
+}
+
+.botones{
+    width: 100px;
+    background-color:  black;
+    color: white;
+    position: relative;
+    top: 125px;
+    border: none;
+    font-size:medium;
+}
+
+.botones:hover{
+    background-color: #09f;
+    border-radius: 20px;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+}
+
+.imagen_encabezado{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cuadro_body{
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    display: flex;
+}
+
+.cuadro_izquierda{
+    width: 200px;
+    height: 700px;
+    background-color: white;
+}
+
+.div{
+    width: 200px;
+    height: 140px;
+    border: 1px solid #c4c2c2;
+}
+
+.parrafo{
+    font-size: large;
+    color: black;
+}
+
+.parrafo:hover{
+    text-decoration: underline;
+}
+
+.cuadro_centro{
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    
+}
+
+.cuadro_arriba_centro{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    
+}
+
+.botones1{
+    display: flex;
+    gap: 197px;
+}
+
+.botonesx{
+    width: 100px;
+    background-color:  black;
+    color: white;
+    border: none;
+    font-size:medium;
+    position: relative;
+    top: 10px;
+}
+
+.botonesx:hover{
+    background-color: #09f;
+    border-radius: 20px;
+}
+
+.cuadro_titulo_informe{
+    width: 100%;
+    height: 90px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    
+}
+
+.titulo1{
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.cuadro_masvendidos{
+    width: 100%;
+    height: 80%;
+    background-color: gray;
+    border: 1px solid white;
+    display: flex;
+}
+
+.div1{
+    width: 50%;
+    height: 100%;
+    background-color: #ddd;;
+    border: 1px solid #c4c2c2;
+}
+
+.div_masvendidos{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.titulo12{
+    text-align: center;
+}
+
+.div2{
+    width: 50%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid #c4c2c2;
+}
+
+.divr{
+    padding: 20px;
+    width: 100%;
+    height: 95%;
+    background-color: white;
+}
+
+.tabla{
+    width: 100%;
+    height: 100%;
+    border: #09f;
+    background-color: #f1f1f1;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #f5f5f5; 
+    padding: 20px;
+    margin-top: auto; 
+    /* border-top: 1px solid #ccc; */
+
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+
+}
+
+.footer-section h4 {
+    color: #333;
+    margin-bottom: 10px;
+
+}
+
+.footer-section p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section i {
+    margin-right: 10px;
+}
+
+.footer-section p a:hover {
+    color: #000; 
+}
+
+.footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.footer-section p i {
+    color: #333; 
+}
+
+.icon {
+    font-size: 24px; 
+    color: #333; 
+    margin-right: 10px; 
+    text-decoration: none;
+}

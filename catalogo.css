@@ -38,7 +38,7 @@ header:hover {
     gap: 1%;
     margin-top: 2.4em;
 }
-/* 
+
 .botones button {
     background-color: transparent;
     border-radius: 10px;
@@ -47,7 +47,7 @@ header:hover {
     border: none;
     padding: 3% 5%;
     cursor: pointer;
-} */
+} 
 
 .botones button:hover {
     background-color: rgb(187, 181, 181);
